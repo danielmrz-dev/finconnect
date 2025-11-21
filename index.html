@@ -18,36 +18,123 @@
         Fin<span class="title-color">Connect</span>
       </h1>
       <ul class="nav flex-row justify-content-between px-2">
-        <li class="nav-item active text-start fs-4 bg-light d-flex align-items-center justify-content-center">
-          <a class="text-dark fw-bold text-decoration-none" aria-current="page" href="#">
-            <img class="icon" src="./assets/home-icon.svg" alt="">
+        <li
+          class="nav-item active text-start fs-4 bg-light d-flex align-items-center justify-content-center"
+        >
+          <a
+            class="text-dark fw-bold text-decoration-none"
+            aria-current="page"
+            href="#"
+          >
+            <img class="icon" src="./assets/home-icon.svg" alt="" />
           </a>
         </li>
-        <li class="nav-item text-start fs-4 d-flex align-items-center justify-content-center">
-          <a class="text-dark fw-bold text-decoration-none" aria-current="page" href="#">
-            <img class="icon" src="./assets/transactions-icon.svg" alt="">
+        <li
+          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+        >
+          <a
+            class="text-dark fw-bold text-decoration-none"
+            aria-current="page"
+            href="#"
+          >
+            <img class="icon" src="./assets/transactions-icon.svg" alt="" />
           </a>
         </li>
-        <li class="nav-item text-start fs-4 d-flex align-items-center justify-content-center">
-          <a class="text-dark fw-bold text-decoration-none" aria-current="page" href="#">
-            <img class="icon" src="./assets/chart-icon.svg" alt="">
+        <li
+          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+        >
+          <a
+            class="text-dark fw-bold text-decoration-none"
+            aria-current="page"
+            href="#"
+          >
+            <img class="icon" src="./assets/chart-icon.svg" alt="" />
           </a>
         </li>
-        <li class="nav-item text-start fs-4 d-flex align-items-center justify-content-center">
-          <a class="text-dark fw-bold text-decoration-none" aria-current="page" href="#">
-            <img class="icon" src="./assets/savings-icon.svg" alt="">
+        <li
+          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+        >
+          <a
+            class="text-dark fw-bold text-decoration-none"
+            aria-current="page"
+            href="#"
+          >
+            <img class="icon" src="./assets/savings-icon.svg" alt="" />
           </a>
         </li>
-        <li class="nav-item text-start fs-4 d-flex align-items-center justify-content-center">
-          <a class="text-dark fw-bold text-decoration-none" aria-current="page" href="#">
-            <img class="icon" src="./assets/profile-icon.svg" alt="">
+        <li
+          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+        >
+          <a
+            class="text-dark fw-bold text-decoration-none"
+            aria-current="page"
+            href="#"
+          >
+            <img class="icon" src="./assets/profile-icon.svg" alt="" />
           </a>
         </li>
       </ul>
     </nav>
 
-    <main class="d-flex flex-column p-4">
+    <main class="main d-flex flex-column p-4 gap-5">
       <h1 class="fw-bold">Resumo</h1>
+
+      <section class="balance d-flex flex-column gap-3">
+        <div class="info-container d-flex flex-column bg-dark text-white p-4">
+          <span class="fs-6">Saldo atual</span>
+          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+        </div>
+        <div class="info-container d-flex flex-column bg-light text-dark p-4">
+          <span class="fs-6">Saldo atual</span>
+          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+        </div>
+        <div class="info-container d-flex flex-column bg-light text-dark p-4">
+          <span class="fs-6">Saldo atual</span>
+          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+        </div>
+      </section>
+
+      <section class="pots d-flex flex-column gap-4 bg-light p-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <h2 class="fw-bold m-0">Caixinhas</h2>
+          <span>
+            Ver detalhes
+            <img class="icon-small" src="./assets/seta-direita.svg" alt="" />
+          </span>
+        </div>
+
+        <div class="pots-container d-flex align-items-center text-dark p-4">
+          <img class="pots-icon" src="./assets/savings-icon-green.svg" alt="">
+          <div class="d-flex flex-column">
+            <p class="m-0 opacity-75">Total guardado</p>
+            <strong class="fs-1 fw-bolder">R$ 850,00</strong>
+          </div>
+
+        </div>
+        <div class="pots-division d-grid align-items-center gap-3">
+          <div class="row">
+            <div class="pots-type pl-2 col">
+              <p class="pot-title m-0 opacity-75">Guardado</p>
+              <p class="m-0 fw-bold">R$ 212,50</p>
+            </div>
+            <div class="pots-type pl-2 col second-pot">
+              <p class="pot-title m-0 opacity-75">Presente</p>
+              <p class="m-0 fw-bold">R$ 212,50</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="pots-type pl-2 col third-pot">
+              <p class="pot-title m-0 opacity-75">Ingresso do show</p>
+              <p class="m-0 fw-bold">R$ 212,50</p>
+            </div>
+            <div class="pots-type pl-2 col fourth-pot">
+              <p class="pot-title m-0 opacity-75">Notebook novo</p>
+              <p class="m-0 fw-bold">R$ 212,50</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <script
