@@ -59,16 +59,41 @@ body {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.137);
 }
 
-.pots {
+.pots, .recurring-bills {
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.137);
 }
 
-.pots-container {
+.pots-container, .transactions-container {
   background-color: #f8f4f0;
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.137);
   gap: 2rem;
+}
+
+.transactions-container {
+  gap: 1rem;
+}
+
+.transactions-text {
+  font-size: 12px;
+}
+
+.transactions-text:nth-of-type(2) {
+  text-align: end;
+}
+
+.arrow-down, .arrow-up {
+  width: 12px;
+  transform: rotate(45deg);
+}
+
+.transaction-amount-received {
+  color: #277C78;
+}
+
+.transaction-amount-sent {
+  color: #FF0000;
 }
 
 .pots-icon {
@@ -95,3 +120,31 @@ body {
 .pot-title {
   font-size: 13px;
 }
+
+.see-details {
+  font-size: 12px;
+}
+
+.recurring-bill {
+  width: 100%;
+  font-size: 14px;
+}
+
+.recurring-bills-container {
+  border-left: 4px solid #277c78;
+  background-color: #f8f4f0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.137);
+  gap: 2rem;
+}
+
+.recurring-bills-container:nth-child(3) {
+  border-left: 4px solid #F2CDAC;
+}
+
+.recurring-bills-container:nth-child(4) {
+  border-left: 4px solid #82C9D7;
+}
+
+
+
