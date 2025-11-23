@@ -13,89 +13,94 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav class="sidenav bg-dark d-flex flex-column gap-5">
-      <h1 class="title text-light fs-2 fw-bolder px-5">
-        Fin<span class="title-color">Connect</span>
-      </h1>
-      <ul class="nav flex-row justify-content-between px-2">
+    <nav class="sidenav bg-dark">
+      <ul class="nav">
+        <h1 class="title text-light fs-1 fw-bolder px-5">
+          Fin<span class="title-color">Connect</span>
+        </h1>
         <li
-          class="nav-item active text-start fs-4 bg-light d-flex align-items-center justify-content-center"
+          class="nav-item active fs-4 bg-light d-flex align-items-center"
         >
           <a
-            class="text-dark fw-bold text-decoration-none"
+            class="d-flex align-items-center gap-3 text-dark fw-bold text-decoration-none"
             aria-current="page"
             href="#"
           >
             <img class="icon" src="./assets/home-icon.svg" alt="" />
+            <span class="tab-title">Resumo</span>
           </a>
         </li>
         <li
-          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+          class="nav-item fs-4 d-flex align-items-center"
         >
           <a
-            class="text-dark fw-bold text-decoration-none"
+            class="d-flex gap-3 text-dark fw-bold text-decoration-none"
             aria-current="page"
             href="#"
           >
             <img class="icon" src="./assets/transactions-icon.svg" alt="" />
+            <span class="tab-title inactive">Transações</span>
           </a>
         </li>
         <li
-          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+          class="nav-item fs-4 d-flex align-items-center"
         >
           <a
-            class="text-dark fw-bold text-decoration-none"
+            class="d-flex gap-3 text-dark fw-bold text-decoration-none"
             aria-current="page"
             href="#"
           >
             <img class="icon" src="./assets/chart-icon.svg" alt="" />
+            <span class="tab-title inactive">Orçamento</span>
           </a>
         </li>
         <li
-          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+          class="nav-item fs-4 d-flex align-items-center"
         >
           <a
-            class="text-dark fw-bold text-decoration-none"
+            class="d-flex gap-3 text-dark fw-bold text-decoration-none"
             aria-current="page"
             href="#"
           >
             <img class="icon" src="./assets/savings-icon.svg" alt="" />
+            <span class="tab-title inactive">Caixinhas</span>
           </a>
         </li>
         <li
-          class="nav-item text-start fs-4 d-flex align-items-center justify-content-center"
+          class="nav-item fs-4 d-flex align-items-center"
         >
           <a
-            class="text-dark fw-bold text-decoration-none"
+            class="d-flex gap-3 text-dark fw-bold text-decoration-none"
             aria-current="page"
             href="#"
           >
             <img class="icon" src="./assets/profile-icon.svg" alt="" />
+            <span class="tab-title inactive">Contas recorrentes</span>
           </a>
         </li>
       </ul>
     </nav>
 
-    <main class="main d-flex flex-column p-4 gap-5">
-      <h1 class="fw-bold">Resumo</h1>
+    <main class="main">
+      <h1 class="page-title fw-bold">Resumo</h1>
 
-      <section class="balance d-flex flex-column gap-3">
+      <section class="balance">
         <div class="info-container d-flex flex-column bg-dark text-white p-4">
           <span class="fs-6">Saldo atual</span>
-          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+          <strong class="fs-2 fw-bolder">R$ 2.000,00</strong>
         </div>
         <div class="info-container d-flex flex-column bg-light text-dark p-4">
           <span class="fs-6">Saldo atual</span>
-          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+          <strong class="fs-2 fw-bolder">R$ 2.000,00</strong>
         </div>
         <div class="info-container d-flex flex-column bg-light text-dark p-4">
           <span class="fs-6">Saldo atual</span>
-          <strong class="fs-1 fw-bolder">R$ 2.000,00</strong>
+          <strong class="fs-2 fw-bolder">R$ 2.000,00</strong>
         </div>
       </section>
 
-      <section class="pots d-flex flex-column gap-4 bg-light p-4">
-        <div class="d-flex align-items-center justify-content-between">
+      <section class="pots bg-light">
+        <div class="pots-header">
           <h2 class="fw-bold m-0 fs-6">Caixinhas</h2>
           <span class="see-details">
             Ver detalhes
@@ -103,40 +108,86 @@
           </span>
         </div>
 
-        <div class="pots-container d-flex align-items-center text-dark p-4">
-          <img class="pots-icon" src="./assets/savings-icon-green.svg" alt="">
-          <div class="d-flex flex-column">
-            <p class="m-0 opacity-75">Total guardado</p>
-            <strong class="fs-1 fw-bolder">R$ 850,00</strong>
+        <div class="pots-info">
+          <div class="pots-container">
+            <img class="pots-icon" src="./assets/savings-icon-green.svg" alt="">
+            <div class="d-flex flex-column">
+              <p class="m-0 opacity-75">Total guardado</p>
+              <strong class="pots-value fw-bolder">R$ 850,00</strong>
+            </div>
+  
           </div>
-
+          <div class="pots-division">
+            <div class="pots-division-container">
+              <div class="pots-type pl-2">
+                <p class="pot-title m-0 opacity-75">Guardado</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+              <div class="pots-type pl-2 second-pot">
+                <p class="pot-title m-0 opacity-75">Presente</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+            </div>
+            <div class="pots-division-container">
+              <div class="pots-type pl-2 third-pot">
+                <p class="pot-title m-0 opacity-75">Ingresso do show</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+              <div class="pots-type pl-2 fourth-pot">
+                <p class="pot-title m-0 opacity-75">Notebook novo</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+            </div>
         </div>
-        <div class="pots-division d-grid align-items-center gap-3">
-          <div class="row">
-            <div class="pots-type pl-2 col">
-              <p class="pot-title m-0 opacity-75">Guardado</p>
-              <p class="m-0 fw-bold">R$ 212,50</p>
-            </div>
-            <div class="pots-type pl-2 col second-pot">
-              <p class="pot-title m-0 opacity-75">Presente</p>
-              <p class="m-0 fw-bold">R$ 212,50</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="pots-type pl-2 col third-pot">
-              <p class="pot-title m-0 opacity-75">Ingresso do show</p>
-              <p class="m-0 fw-bold">R$ 212,50</p>
-            </div>
-            <div class="pots-type pl-2 col fourth-pot">
-              <p class="pot-title m-0 opacity-75">Notebook novo</p>
-              <p class="m-0 fw-bold">R$ 212,50</p>
-            </div>
-          </div>
 
         </div>
       </section>
 
-      <section class="pots d-flex flex-column gap-4 bg-light p-4">
+      <section class="budget bg-light">
+        <div class="budget-header">
+          <h2 class="fw-bold m-0 fs-6">Orçamento</h2>
+          <span class="see-details">
+            Ver detalhes
+            <img class="icon-small" src="./assets/seta-direita.svg" alt="" />
+          </span>
+        </div>
+
+        <div class="budget-info">
+          <div class="budget-container">
+            <img class="budget-icon" src="./assets/savings-icon-green.svg" alt="">
+            <div class="d-flex flex-column">
+              <p class="m-0 opacity-75">Total guardado</p>
+              <strong class="budget-value fw-bolder">R$ 850,00</strong>
+            </div>
+  
+          </div>
+          <div class="budget-division">
+            <div class="budget-division-container">
+              <div class="budget-type pl-2">
+                <p class="pot-title m-0 opacity-75">Guardado</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+              <div class="budget-type pl-2 second-pot">
+                <p class="pot-title m-0 opacity-75">Presente</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+            </div>
+            <div class="budget-division-container">
+              <div class="budget-type pl-2 third-pot">
+                <p class="pot-title m-0 opacity-75">Ingresso do show</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+              <div class="budget-type pl-2 fourth-pot">
+                <p class="pot-title m-0 opacity-75">Notebook novo</p>
+                <p class="m-0 fw-bold">R$ 212,50</p>
+              </div>
+            </div>
+        </div>
+
+        </div>
+      </section>
+
+      <section class="transactions d-flex flex-column gap-4 bg-light p-4">
         <div class="d-flex align-items-center justify-content-between">
           <h2 class="fw-bold m-0 fs-6">Transações</h2>
           <span class="see-details">
