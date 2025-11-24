@@ -34,7 +34,7 @@ A aplicação foi desenvolvida com abordagem mobile-first, adaptando-se perfeita
 2. Abra o arquivo `index.html` em seu navegador
 3. Explore as diferentes seções através da navegação lateral
 
-Ou abra a aplicação através deste link => [Deploy FinConnect](https://danielmrz-dev.github.io/finconnect/)
+Ou abra a aplicação através deste link => [Deploy FinConnect](https://finconnect-rho.vercel.app/)
 
 ## 📝 Notas de Desenvolvimento
 
