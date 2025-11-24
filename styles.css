@@ -24,6 +24,7 @@ body {
   height: 80px;
   position: fixed;
   bottom: 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -107,8 +108,7 @@ body {
 
 .pots-container,
 .transactions-container,
-.budget-container,
-.transactions-container {
+.budget-container {
   display: flex;
   align-items: center;
   padding: 1.5rem;
@@ -130,7 +130,7 @@ body {
 .budget-division-container {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .pots-value {
@@ -153,6 +153,10 @@ body {
 
 .transactions-text {
   font-size: 12px;
+}
+
+.destination {
+  margin-right: auto;
 }
 
 .transactions-text:nth-of-type(2) {
@@ -242,13 +246,14 @@ body {
     margin-bottom: 0;
     margin-left: 19rem;
     width: 100%;
-    display: grid;
+    display: flex;
   }
 
   .sidenav {
     max-width: 300px;
-    min-height: 100vh;
+    min-height: 100%;
     position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
   }
@@ -313,7 +318,6 @@ body {
 
   .pots {
     grid-area: 3 / 1 / 4 / 2;
-    width: 120%;
   }
 
   .pots-info,
@@ -338,26 +342,38 @@ body {
 
   .pots-division,
   .budget-division {
+    flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
     width: 50%;
   }
 
   .pots-value {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .pots-text-wrapper {
+    min-width: 100%;
   }
 
   .budget-value {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .budget-text-wrapper {
+    min-width: 100%;
   }
 
   .budget {
     grid-area: 3 / 2 / 4 / 3;
     align-self: end;
     justify-self: end;
-    width: 80%;
+    width: 100%;
   }
+}
 
-  .recurring-bills {
+@media screen and (min-width: 1300px) {
+  .main {
+    display: grid;
   }
 }
