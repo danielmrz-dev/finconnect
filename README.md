@@ -4,7 +4,7 @@ Repositório dedicado ao desenvolvimento da atividade da Fase 4 relacionada ao p
 
 ## 📋 Descrição
 
-O **FinConnect** é uma aplicação web moderna de gerenciamento financeiro pessoal. Essa é a tela inicial da aplícação, desenvolvida como atividade da Fase 4 do programa, e oferece uma interface intuitiva e responsiva para controlar receitas, despesas, orçamentos e caixinhas de poupança.
+O **FinConnect** é uma aplicação web moderna de gerenciamento financeiro pessoal. Essa é a tela inicial, desenvolvida como atividade da Fase 4 do programa, e oferece uma interface intuitiva e responsiva para controlar receitas, despesas, orçamentos e caixinhas de poupança.
 
 ### Funcionalidades (Ainda não aplicadas, apenas a camada visual)
 
